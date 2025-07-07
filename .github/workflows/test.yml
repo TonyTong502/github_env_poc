@@ -2,14 +2,12 @@ name: env test
 
 on:
   workflow_dispatch
-env:
-  TENANT_ENVIRONMENT: ${{ github.ref_name == 'main' && 'Prod' || github.ref_name == 'qa' && 'Qa' || github.ref_name == 'dev' && 'Dev' }}
 
 jobs:
   greeting_job:
     runs-on: ubuntu-latest
     environment:
-      name: ${{ env.TENANT_ENVIRONMENT }}
+      name: ${{ github.ref_name }}
     steps:
       - name: "Say Hello"
         run: echo "secret ${{ secrets.sec_1 }}, variable ${{ vars.var_1 }}"
