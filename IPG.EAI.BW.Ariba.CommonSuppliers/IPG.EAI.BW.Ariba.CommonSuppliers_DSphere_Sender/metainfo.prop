@@ -1,0 +1,3 @@
+#Store metainfo properties
+#Mon Jul 07 13:39:00 UTC 2025
+description=Call the Ariba API and share code logic between Delta and Full Load processes, then send the data to JMSQ.

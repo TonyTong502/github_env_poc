@@ -1,0 +1,10 @@
+{
+  "d": {
+    "Id": "IPG.EAI.BW.Ariba.CommonSuppliers",
+    "Name": "IPG.EAI.BW.Ariba.CommonSuppliers",
+    "Description": "\u003cp\u003e\u003c/p\u003e",
+    "ShortText": "Extract Common Suppliers details from Ariba API and load into SAP HANA(On-Premise) Tables for reconciliation reports",
+    "Version": "1.0.0",
+    "Mode": "EDIT_ALLOWED"
+  }
+}

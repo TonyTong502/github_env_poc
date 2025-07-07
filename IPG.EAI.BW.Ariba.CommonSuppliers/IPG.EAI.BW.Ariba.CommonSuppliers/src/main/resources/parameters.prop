@@ -1,0 +1,30 @@
+#
+#Mon Jul 07 13:38:59 UTC 2025
+apiKey=r8uOSv6HQmKwzWQ6vJUfmyE10WUT4t3Q
+Extrnl_Param_EmailSend=/EmailNotification/InboundDS
+sendSuccessEmailZeroRecords=FALSE
+sendSuccessEmail=TRUE
+ErrorTo=Alex.Star@interpublic.com;Preethi.Kencha@interpublic.com;Seungkwon.Hong@interpublic.com
+Var_Ariba_HANA_Vendor_LastSuccessDateTime=Var_Ariba_CommonSuppliers_LastSuccessDateTime
+ExceptionSubject=Exception | IPG.EAI.BW.Ariba.CommonSuppliers | ${date\:now\:yyyy-MM-dd'T'HH\:mm\:ss'Z'}
+enableTracing=False
+ariba_commonsuppliers_api=https\://openapi.ariba.com/api/mds-search/v1/prod/entities/commonsuppliers
+xsjsAddress=http\://ipgvh.bw.hana\:4000/DIS/BW_ARIBA_COMMONSUPPLIERS_XSJS/BW_ARIBA_COMMONSUPPLIERS.xsjs
+RetryIntervalinMS=30000
+Var_Ariba_CommonSuppliers_AccessToken=Var_Ariba_CommonSuppliers_AccessToken
+DataLoadDateTo=${date\:now\:yyyy-MM-dd&apos;T&apos;HH\:mm\:ss&apos;Z&apos;}
+xsjs_timeout=300000
+DataLoadDateFrom=${date\:now\:yyyy-MM-dd&apos;T&apos;HH\:mm\:ss&apos;Z&apos;}
+SuccessCC=Nick.Xie@interpublic.com;wu.xi@interpublic.com
+top=200
+ErrorCC=Nick.Xie@interpublic.com;wu.xi@interpublic.com
+ariba_timeout=300000
+ErrorSubject=Error | IPG.EAI.BW.Ariba.CommonSuppliers | ${date\:now\:yyyy-MM-dd'T'HH\:mm\:ss'Z'}
+SuccessSubject=Success | IPG.EAI.BW.Ariba.CommonSuppliers | ${date\:now\:yyyy-MM-dd'T'HH\:mm\:ss'Z'}
+SuccessTo=Alex.Star@interpublic.com;Preethi.Kencha@interpublic.com;Seungkwon.Hong@interpublic.com
+From=no-reply-SAP-CPI-DEV@interpublic.com
+LOGGER_LEVEL=INFO
+SAP_BW_HANA=BWHANA_Ariba_SvcAcct
+locationID=
+realm=ipg-T
+RetryLimit=2
