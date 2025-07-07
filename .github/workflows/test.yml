@@ -9,7 +9,7 @@ env:
 jobs:
   greeting_job:
     runs-on: ubuntu-latest
-    environment: Prod
+    environment: $TARGET
     steps:
       - name: "Say Hello"
         run: echo "secret ${{ secrets.sec_1 }}, variable ${{ vars.var_1 }}"
