@@ -16,4 +16,4 @@ jobs:
     environment: ${{ inputs.environment }}
     steps:
       - name: "Say Hello"
-        run: echo "secret ${{ secrets.sec_1 }}, variable ${{ vars.var_1 }}"
+        run: echo "secret ${{ secrets.OAUTH_CLIENT_ID }} | ${{ secrets.OAUTH_CLIENT_SECRET }}, variable ${{ vars.TENANT_HOST }} | ${{ vars.OAUTH_HOST }}"
