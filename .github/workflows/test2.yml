@@ -5,15 +5,15 @@ name: Reusable CI Workflow
 on:
   #workflow_call:
   workflow_dispatch:
-    inputs:
-      environment:
-        required: true
-        type: string
+    # inputs:
+    #   environment:
+    #     required: true
+    #     type: string
 
 jobs:
   greeting_job:
     runs-on: ubuntu-latest
-    environment: ${{ inputs.environment }}
+    environment: ${{ github.ref_name == 'main' && 'Prod' || github.ref_name == 'qa' && 'Qa' || github.ref_name == 'dev' && 'Dev' }}
     steps:
       - name: "Say Hello"
         run: echo "secret ${{ secrets.OAUTH_CLIENT_ID }} | ${{ secrets.OAUTH_CLIENT_SECRET }}, variable ${{ vars.TENANT_HOST }} | ${{ vars.OAUTH_HOST }}"
