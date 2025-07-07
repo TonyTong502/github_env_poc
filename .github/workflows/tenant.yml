@@ -34,6 +34,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: "show secrets & variables"
+        run: echo "secret ${{ secrets.OAUTH_CLIENT_ID }} | ${{ secrets.OAUTH_CLIENT_SECRET }}, variable ${{ vars.TENANT_HOST }} | ${{ vars.OAUTH_HOST }}"
+
       - name: 'Take a snapshot'
         uses: engswee/flashpipe-action/snapshot@v1
         with:
