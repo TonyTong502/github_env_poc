@@ -1,0 +1,12 @@
+name: Greeting Action default value
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        default: "Octocat"
+        description: "Name to greet"
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello ${{ github.event.inputs.name }}"
