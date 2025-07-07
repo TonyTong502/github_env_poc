@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: IPG.EAI.CentralizedDL.MDM.Scripts; singleton:=tru
+ e
+Bundle-ManifestVersion: 2
+Origin-Bundle-SymbolicName: IPG.EAI.CentralizedDL.MDM.Scripts
+SAP-ArtifactTrait: 
+Import-Package: org.osgi.framework
+Origin-Bundle-Name: IPG.EAI.CentralizedDL.MDM.Scripts
+Provide-Capability: scriptcollection.IPG.EAI.CentralizedDL.MDM.Scripts
+ ;version:Version="1.0.3"
+Bundle-Name: IPG.EAI.CentralizedDL.MDM.Scripts
+Bundle-Version: 1.0.3
+SAP-NodeType: IFLMAP
+SAP-BundleType: ScriptCollection
+Import-Service: 
+

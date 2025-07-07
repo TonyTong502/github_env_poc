@@ -1,0 +1,37 @@
+#
+#Mon Jul 07 14:36:56 UTC 2025
+SHARE_EMAIL_PROCESS=/EmailNotification/InboundDS
+DRM_WEBSERVICE_TIMEOUT=300000
+SUCCESS_EMAIL_TO=ramesh.more@interpublic.com;Nick.xie@interpublic.com
+JDBC_DS=CentralizedDL_DB_SQL
+JDBC_MAX_RECORDS=100000
+LAST_SUCCESS_DATETIME=Var_CentralizedDL_EMP_DET_LastSuccessDT
+EMAIL_FROM=no-reply-SAP-CPI-DEV@interpublic.com
+JDBC_MDM_CONN_TIMEOUT=600
+ERROR_EMAIL_CC=disadmins@interpublic.com
+ENV_MDM_DRM_API_AccessToken=IPG.EAI.MDM.DRM.Shared_AccessToken
+DRM_WEBSERVICE_URL=https\://dev.api.interpublic.com/20/MDM/DRM/SERVICE/UploadLocalMasterData
+ENABLE_TRACING=TRUE
+JDBC_CONN_TIMEOUT=3
+SUCCESS_EMAIL_SUBJECT=IPG.EAI.CentralizedDL.MDM.EMP_DET | Data synchronization successfully
+DATA_RELOAD_FROM=2022-05-01 00\:00\:00
+DATA_RELOAD=FALSE
+Sch_EMPDET_MDM_Syncup=<row><cell>dateType</cell><cell></cell></row><row><cell>timeType</cell><cell></cell></row><row><cell>dayValue</cell><cell></cell></row><row><cell>monthValue</cell><cell></cell></row><row><cell>yearValue</cell><cell></cell></row><row><cell>onWeekly</cell><cell></cell></row><row><cell>onMonthly</cell><cell></cell></row><row><cell>OnEveryMinute</cell><cell></cell></row><row><cell>fromInterval</cell><cell></cell></row><row><cell>toInterval</cell><cell></cell></row><row><cell>timeZone</cell><cell>( UTC 0\:00 ) Greenwich Mean Time(Etc/GMT)</cell></row><row><cell>secondValue</cell><cell>0</cell></row><row><cell>minutesValue</cell><cell></cell></row><row><cell>hourValue</cell><cell></cell></row><row><cell>triggerType</cell><cell>simple</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>fireNow\=true</cell></row>
+HTTP_MAX_RETRY_COUNT=3
+DATETIME_OFFSET=30
+SUCCESS_EMAIL_CC=disadmins@interpublic.com;siva.sadasivunivenkata@interpublic.com;vengal.mandadi@interpublic.com
+DATE_FROM=Var_CentralizedDL_EMP_DET_LastSuccessDT
+JDBC_MDM_MAX_RECORDS=100000
+DRM_WEBSERVICE_ACCOUNT=
+DATE_FROM_DEFAULT=1985-01-01 00\:00\:00
+JDBC_MDM_QUERY_TIMEOUT=3600
+PROXY_AUTHORIZATION=Var_APIM_MDM_DRM_SERVICE_AccessToken
+LOGGER_LEVEL=Info
+APIKEY=Gc8J9FvFGhd2cstMRXldntO5XVSWgJAP
+HTTP_RETRY_INTERVAL=120000
+ERROR_EMAIL_SUBJECT=IPG.EAI.CentralizedDL.MDM.EMP_DET | Data synchronization failed.
+BATCH_SIZE=200
+JDBC_MDM_DS=MDM_DB_SQL
+JDBC_QUERY_TIMEOUT=3
+ERROR_EMAIL_TO=ramesh.more@interpublic.com;Nick.xie@interpublic.com;siva.sadasivunivenkata@interpublic.com;vengal.mandadi@interpublic.com
+DATE_TO=${date\:now\:yyyy-MM-dd HH\:mm\:ss}

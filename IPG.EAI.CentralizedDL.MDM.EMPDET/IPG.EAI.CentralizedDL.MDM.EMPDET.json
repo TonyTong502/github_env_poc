@@ -1,0 +1,10 @@
+{
+  "d": {
+    "Id": "IPG.EAI.CentralizedDL.MDM.EMPDET",
+    "Name": "IPG.EAI.CentralizedDL.MDM.EMP_DET",
+    "Description": "\u003cp\u003e\u003c/p\u003e",
+    "ShortText": "Load Hrlink Employee Data to MDM",
+    "Version": "1.0.0",
+    "Mode": "EDIT_ALLOWED"
+  }
+}
