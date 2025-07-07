@@ -1,0 +1,47 @@
+name: Tenant Snapshot
+on:
+  # manual trigger
+  workflow_dispatch:
+    inputs:
+      includedIds:
+        default: "IPG.EAI.BW.Ariba.CommonSuppliers,IPG.EAI.BW.Ariba.TaskMembers,IPG.EAI.CentralizedDL.MDM.EMPDET,IPGEAIcSAPMediaAR,IPG.EAI.BW.Ariba.VendorTask,IPGEAIcSAPMediaAP,IPG.EAI.MDM.WWDBIDM,IPG.EAI.HRLink.CentralizedDL,Vantage.EInvoice.DigiGST.IN,IPGEAIVTGResourceAssignment,Vantage.Einvoice.GTI,IPGEAIRoutingcSAPLockBox,Vantage.EInvoice.WebPOS,IPG.EAI.MDM.Shared,IPG.EAI.AD.CentralizedDL.MDM,IPGEAIRoutingVTGVendorPortal,IPGEAIHCMConcurEmployeeLoad,IPGEAIRoutingVantageNonEmployeePayroll,IPGEAIVTGWIPInboundSoftCost,IPG.EAI.WWDB.MDM,IPG.EAI.Workday.WWDB,IPG.EAI.WWDB.Docebo,IPGEAIRoutingcSAPArxivar,IPGEAInSAPMediaOutbound,IPG.DIS.DRM,FCBLV.OAPlanRevenue,IPGEAIVTGStudioUnitFilesUpload,IPGEAIRatesPreProcessor,IPG.EAI.BW.Ariba.VendorData,IPGEAIRoutingVTGFMSeAccounting,IPGEAIVantageAMEXDailyTx,IPGEAInSAPElectronicInvoices,IPGEAIVantageClientHierarchyInbound,IPGEAIVTGEstimateOutbound,IPGEAIRoutingVantageEncryptDecrypt,IPG.EAI.Centralized.DL,IPGEAISharedRoutingiNotif,IPGEAIROUTINGcSAPOB10,IPGEAIAribaBuyingInvoicing,IPGEAIIASPOTFIREIssueTracker,IPGEAIRoutingNALockBox,IPG.EAI.Vantage.ElectronicDocumentMexico,IPGEAIIDMTemplatePreprocessor,IPGEAISPOTFIRE,IPGEAIVTGEInvoiceImageUpload,IPGEAIRoutingcSAPOutgoingBillings,IPGEAIVantagePlannedHours,IPGEAIBWAribaVendorWorkspacesAndDocuments,IPGEAIVantageProductMapping,IPGEAICISOSPOTFIRE,IPGEAIRoutingSkills,IPGEAIOPENPAGESSPOTFIRE,IPGEAITMSAtradius,IPGEAIRoutingConcurEncryptDecrypt,IPGEAIITSOXSPOTFIRE,IPGEAIHRLINKSPOTFIRE,IPGEAIRoutingcSAPBankingAPAC,IPGEAIHYPERIONSPOTFIRE,IPGEAIRoutingVantageHSBC,IPGEAIConcurInbound,IPGEAISAPElectronicInvoices,IPGEAInSAPRatesProcessor,IPGEAIAMEXCreditCardProcess,IPGEAITnECrisis24,IPGEAICrisisMgmtSPOTFIREIJET,IPGEAIBWVTGSOWID,IPGEAIRoutingVantageOB10,IPGEAITransparencyOrgSPOTFIRECPI,IPGEAIDOCEBOSPOTFIRE,IPG.EAI.HRLink.WWDB,IPGEAIIASPOTFIREEthicsCases,IPGEAIRoutingVantageMasterExtracts,IPGEAIIASPOTFIREAuditResult,IPGEAIRoutingSanofi,IPGEAIVantageGlobalPayroll,IPGEAIVantageMasterExtract,IPGEAISAPRatesProcessor,IPGEAITnEBW,IPGEAIVTGBofAMastercardRemittances,IPGEAIITRoster,IPGEAIVTGLATAMInbound,IPGEAIIASPOTFIREOtherMetrics,IPGEAIVantageWIPOutbound,IPG.EAI.BW.Ariba.VendorESG,IPGEAISharedSPOLNotifications,IPGEAIRoutingPeopleSoftAnnualSalary,IPGEAITnEAMEX,IPGEAISDVTGResourceAllocation,IPGEAIHyperionToBW,IPG.EAI.Global.BMGNetting,IPGEAIRoutingPeopleSoftAnnualComp,IPGEAIRoutingPeopleSoftPTO,IPGEAIRoutingVantageFMSExtracts,IPGEAIAcxiomConcurTravelInbound,IPGEAIMWGDWDocebo,IPGEAIRoutingBWEncryptDecrypt,IPGEAISharedDuplicateCheck,IPGEAIRoutingcSAPPeoplesoftInboundOutbound,IPG.EAI.MSGraph,IPGEAISAPCoStar,IPGEAIVTGHCMHeadCount,IPGEAIVTGMediaAP,IPGEAIRoutingiSAPAPACMedia,IPGEAIAribaProcurementInvoices,IPGEAIRoutingHCMAnnualComp,IPGEAIEPBCSBWHyperionPlanning,IPGEAIDOCEBOWWDB,IPGEAIVantageCCRemittance,IPGEAIMDMHCMADBRANDLOCATION,IPGEAIRoutingHyperionEDH,IPGEAIMIEKSOMDM,IPG.EAI.BW.Ariba.VendorDiversity,IPGEAIRoutingVantageCreditCardRemittance,IPGEAIRoutingVantageCITINA,IPGEAIMDMDeptCostCenterMap,IPGEAIRoutingVantageOutgoingBillings,IPGEAIRoutingHCMAnnualSalary,IPGEAIVantageMediaOrders,IPGEAIVTGConcurFMSCostCenterOutbound,IPGEAIRoutingcSAPOutgoingPayments,IPGEAIcSAPHCMGL,IPGEAIVTGWallStreetTreasury,IPGEAIHCMcSAPHeadCount,IPGEAIRoutingVantageOutboundPaypalRemit,IPG.EAI.Cashforce,Shared,IPGEAIPSoftToConcurEmployeeLoad,IPGEAIVTGHCMGL,IPGEAIRoutingcSAPEncryptDecrypt,IPGEAIcSAPPeopleSoftGL,IPGEAIVTGESTINVGM,IPGEAISharedAWS,IPGEAIVTGRGADashboard,IPGEAIRoutingcSAPStandardRegister,IPGEAIRoutingCSAPPRSystemsOutbound,IPGEAIHRLINKAMEX,IPGEAIiSAPEInvoice,IPGEAIRoutingOAProfromaEDH,IPGEAISHAREDHCMAccessToken,IPGEAIVTGRGAJobsInbound,IPGEAIBWAribaVendorSupplierRegExp,IPGEAIRoutingOAClientProfitabilitySuiteEDH,IPGEAISADRM,IPGEAIDISEmailAWS,IPG.EAI.Docebo,IPGEAIRoutingVantageBPC,IPGEAISharedOrderedDelivery,IPGEAIRoutingDDStoTMS,IPGEAIVantageEInvoiceInteme,IPGEAIRoutingMediaOcean,IPGEAIConcurVTGSAE,IPGEAIVTGLATAMOutbound,IPGEAIVantageRGAInboundPTDEAC,IPGEAIVTGBofAMastercardPayments,IPGEAIVTGConcurUploadToSAP,IPGEAIVTGConcurImageUpload,IPG.EAI.Routing.cSAP.Media.MasterTransaction,IPGEAIAribaVTGPurchaseRequisition,IPGEAIVantageWIPInboundTimeEntry,IPGEAIRoutingVantageBankPayments,IPGEAIRoutingVantageArxivar,IPGEAIHCMPSA,IPGEAIRoutingVantageBankingMisc,IPGEAIRoutingVantageStandardRegister,IPGEAIGlobalPayrollPreProcessor,IPGEAIRoutingHyperionTransfers11,IPGEAIRoutingSSIS,IPGEAIHCMcSAPMiniMaster,IPGEAIHCMTnE,IPGEAIcSAPCCRemittance,IPGEAIWORKDAYWWDB,IPGEAIHCMTnEWorker,IPGEAISharedExcel,IPGEAIRoutingMWGDWDoceboEncryptDecrypt,IPGEAIVTGMediaAR,IPGEAIcSAPBofAMastercardPayments,IPGEAIVantageMedia,IPGEAIVTGHCMWDGL,IPGEAIRoutingVantageInboundMasterData,IPGEAIEPBCSEDH,IPGEAISharedIPGRetryRelay,IPGEAIHRMSVTGMiniMaster,IPGEAIHCMVTGMiniMaster,IPGEAIHCMAMEXDINERS,IPGEAIRoutingcSAPBofAMastercardRemittances,IPG.EAI.Routing.Vantage.BBVA,IPGEAIRoutingVantageCITILATAM,IPGEAIBWAribaMQScore,IPGEAIRoutingMyTrafficDeutsch,IPGEAISAPJMProcim,IPGEAIRoutingVantageCITIAPAC,IPG.EAI.BW.Ariba.TPRM,IPGEAIAribacSAPPurchaseRequisition,IPGEAIConcurCCAdmin,IPGEAIRoutingVantageMediaMasterTransaction,DISTenantManagement,IPGEAITnEBOFA,IPGEAIRoutingVantageCITIEMEA,IPGEAIRoutingcSAPEBS,IPGEAInSAPPeopleSoftMiniMaster"
+        description: 'Included package Ids (optional)'
+        required: false
+      excludedIds:
+        description: 'Excluded package Ids (optional)'
+        required: false
+      draft:
+        default: ADD
+        description: '(Optional) Draft handling'
+        type: choice
+        options:
+          - SKIP
+          - ADD
+          - ERROR
+        required: false
+      message:
+        description: '(Optional) Commit message'
+        required: false
+
+jobs:
+  take_snapshot:
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref_name == 'main' && 'Prod' || github.ref_name == 'qa' && 'Qa' || github.ref_name == 'dev' && 'Dev' }}
+
+    container:
+      image: engswee/flashpipe:latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 'Take a snapshot'
+        uses: engswee/flashpipe-action/snapshot@v1
+        with:
+          tmn-host: ${{ vars.TENANT_HOST }}
+          oauth-host: ${{ vars.OAUTH_HOST }}
+          oauth-clientid: ${{ secrets.OAUTH_CLIENT_ID }}
+          oauth-clientsecret: ${{ secrets.OAUTH_CLIENT_SECRET }}
+          ids-include: ${{ github.event.inputs.includedIds }}
+          ids-exclude: ${{ github.event.inputs.excludedIds }}
+          draft-handling: ${{ github.event.inputs.draft }}
+          git-commit-msg: ${{ github.event.inputs.message }}
